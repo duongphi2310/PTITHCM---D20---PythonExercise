@@ -1,3 +1,8 @@
+# Given the date (2022, 05, 02) is a Monday, write a program to get the weekday of an input date of year 2022. 
+# For example,
+# Input: 2022, 05, 11
+# Output: Wednesday
+    
 s = input()
 s1 = s[:4]
 s2 = s[6:8]
