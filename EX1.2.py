@@ -1,27 +1,13 @@
-# Given the date (2022, 05, 02) is a Monday, write a program to get the weekday of an input date of year 2022. 
-# For example,
-# Input: 2022, 05, 11
-# Output: Wednesday
-    
+# Write a program to break an integer
+# into a sequence of individual digits. 
+
+# Test Data
+# Input six non-negative digits: 123456
+# Expected Output: 1 2 3 4 5 6
+
 s = input()
-s1 = s[:4]
-s2 = s[6:8]
-s3 = s[10:]
-s1 = int(s1)
-s2 = int(s2)
-s3 = int(s3)
-n = (s3 + 2 * s2 + (3 * (s2 + 1)) // 5 + s1 + (s1 // 4)) % 7;
-if n == 1:
-    print("Monday", end = "")
-elif n == 2:
-    print("Tuesday", end = "")
-elif n == 3:
-    print("Wednesday", end = "")
-elif n == 4:
-    print("Thursday", end = "")
-elif n == 5:
-    print("Friday", end = "")
-elif n == 6:
-    print("Saturday", end = "")
-else:
-    print("Sunday", end = "")
+for x in range(0, len(s)):
+    if (x != len(s) - 1):
+        print(s[x], end = ' ')
+    else:
+        print(s[x], end = '')
