@@ -10,6 +10,7 @@
 #     which is a perfectly legitimate word, so stop looking at me like that.
 # Output:
 #     [perfectly, legitimate]
+
 def count_words(k, s):
     s2 = []
     for i in s:
